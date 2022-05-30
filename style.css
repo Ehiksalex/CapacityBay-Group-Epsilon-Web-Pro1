@@ -5,6 +5,11 @@
     font-family: sans-serif;
 }
 
+:root{
+    --primary-color:rgb(14, 14, 82);
+    --background:linear-gradient(40deg,purple, rgb(209, 29, 194));
+}
+
 
 h1{
     font-family: sans-serif;
@@ -13,13 +18,52 @@ h1{
     font-weight: 600;
 }
 
+.row{
+    padding:30px 20px;
+}
+
+.img{
+    position: absolute;
+    right:350px
+}
+.float-img{
+    position: absolute;
+    bottom:380px;
+    left: 1100px;
+    background-color: #fff;
+    border-radius: 15px;
+    z-index: 1;
+    width: 8%;
+    text-align: center;
+}
+.float-img2{
+    position: absolute;
+    top:120px;
+    right: 310px;
+    background-color: #fff;
+    border-radius: 15px;
+    z-index: 1;
+    width: 8%;
+    text-align: center;
+}
 
 .my_image{
     border-radius: 45%;
    
 }
 
+/* .side{
+    background-image:var(--background);
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    z-index: -1;
+    width: 18%;
+    height: 15%;
+} */
+
 #sec-1{
+    /* height: 100vh; */
     background-image: linear-gradient(40deg,rgb(247, 247, 247), rgb(54, 176, 224));
 }
 
@@ -35,7 +79,7 @@ p{
 }
 
 .start{
-    background-color: rgb(14, 14, 82);
+    background-color: var(--primary-color);
     border-radius: 15px;
     cursor: pointer;
     color: #fff;
@@ -45,7 +89,7 @@ p{
 
 
 .btn{
-    background-image: linear-gradient(40deg,purple, rgb(209, 29, 194));
+    background-image: var(--background);
     border-radius: 15px;
     cursor: pointer;
     color: #fff;
@@ -54,7 +98,7 @@ p{
 }
 
 .btn:hover{
-    color: rgb(14, 14, 82);
+    color: var(--primary-color);
 }
 
 .container-fluid,
@@ -63,7 +107,7 @@ p{
 }
 
 .end{
-    background-image: linear-gradient(40deg,purple, rgb(209, 29, 194));
+    background-image: var(--background);
     border-radius: 15px;
     cursor: pointer;
     color: #fff;
