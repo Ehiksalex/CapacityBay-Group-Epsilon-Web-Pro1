@@ -1,5 +1,5 @@
 *{
-    padding: o;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
@@ -11,11 +11,13 @@
 }
 
 
-h1{
+h2{
     font-family: sans-serif;
     font-size: 2.5rem;
-    line-height: 1.5;
-    font-weight: 600;
+    line-height: 1;
+    font-weight: 400;
+    text-align: center;
+    
 }
 
 .row{
@@ -24,13 +26,15 @@ h1{
 
 .img{
     position: absolute;
-    right:350px;
+    right:300px;
     z-index: 2;
 }
+
+
 .float-img{
     position: absolute;
-    bottom:380px;
-    left: 1100px;
+    bottom:220px;
+    right: 520px;
     background-color: #fff;
     border-radius: 15px;
     z-index: 2;
@@ -60,9 +64,9 @@ h1{
     position: absolute;
     top: 215px;
     right: 100px;
-    width: 300px;
+    width: 250px;
     height: 100px;
-    transform:matrix(1.5,-0.4,0,2,0,0);
+    transform:matrix(1.5,-0.7,0,2,0,0);
    
 }
 
@@ -88,7 +92,7 @@ p{
     cursor: pointer;
     color: #fff;
     width: 15%;
-    padding:10px 20px;
+    padding:10px 15px;
 }
 
 
@@ -125,6 +129,7 @@ p{
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    padding: 3% 3%;
 }
 
 .footer-logo{
@@ -133,4 +138,46 @@ p{
     font-size: larger;
 }
 
+/* section2 */
 
+.sec-2{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 3% 20%;
+    margin: 10px;
+    /* text-align: center; */
+    
+}
+
+.sec-2 .sec21{
+    background: linear-gradient(40deg,purple, rgb(209, 29, 194));
+    border-radius: 10px;
+    min-height: 200px;
+    margin: 10px;
+    color: #fff;
+    box-shadow: 2px 2px #888888;
+}
+
+.sec-2 .sec22{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    min-height: 200px;
+    margin: 10px;
+    box-shadow: 2px 2px #888888;
+}
+
+.sec-2 .sec22 a{
+    text-decoration: none;
+    color: rgb(209, 29, 194);
+    margin: 10px;
+   
+}
+
+.fa{
+    background:linear-gradient(40deg,purple, rgb(209, 29, 194));
+    border-radius: 50%;
+    color:#fff;
+    padding: 10px;
+
+}
