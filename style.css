@@ -1,8 +1,9 @@
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family:sans-serif;
 }
 
 :root{
@@ -146,8 +147,14 @@ p{
     grid-template-columns: auto auto auto;
     padding: 3% 20%;
     margin: 10px;
-    /* text-align: center; */
-    
+    grid-template-areas: 
+    "item1 item2 item3"
+    "item4 item5 item6";
+}
+
+.sec-2 h3{
+    color:#ffffff;
+    text-align: center;
 }
 
 .sec-2 .sec21{
@@ -158,6 +165,7 @@ p{
     color: #fff;
     box-shadow: 2px 2px #888888;
 }
+
 
 .sec-2 .sec22{
     background-color: antiquewhite;
@@ -180,4 +188,73 @@ p{
     color:#fff;
     padding: 10px;
 
+}
+
+.grid-item1{
+    grid-area: item1;
+}
+
+.grid-item2{
+    grid-area: item2;
+}
+
+.grid-item3{
+    grid-area: item3;
+}
+
+.grid-item4{
+    grid-area: item4;
+}
+
+.grid-item5{
+    grid-area: item5;
+}
+
+.grid-item6{
+    grid-area: item6;
+}
+
+/* .con{
+    background: black;
+    width: 100%;
+    position: relative;
+} */
+
+/* responsive */
+/* tablet view */
+@media screen and (max-width:827px){
+    .sec-2{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "item1 item2"
+        "item3 item4"
+        "item5 item6";
+        margin: 5px;
+    }
+    .my_image{
+        border-radius: 90%;
+    }
+    .img{
+        position: relative;
+        right:70px;
+       margin-top: 15px;
+    }
+    .side{
+        display: none;
+    }
+    
+}
+
+/* mobile view */
+@media screen and (max-width:414px){
+    .sec-2{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5"
+        "item6"
+    }  
 }
