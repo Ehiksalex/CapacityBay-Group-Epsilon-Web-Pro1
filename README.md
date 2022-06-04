@@ -1,10 +1,10 @@
-# CapacityBay-Group-Epsilon-Web-Pro1
+
 External Tools use:
 bootstrap CDN,
 Font-awesome
 
 divided each section using the html section tag
-we used bootstrap container-fluid for the hero section to used 100%-width irrespective of the screen size
+we used bootstrap container-fluid for the hero section to used 100%-width irrespective of the screen size but it was not responding well, so we settled for normal CSS grid
 
 we used the position absolute to position the floating elements around the image.
 
