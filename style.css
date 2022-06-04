@@ -6,8 +6,13 @@
 }
 
 :root {
+<<<<<<< HEAD
     --primary-color: rgb(14, 14, 82);
     --background: linear-gradient(40deg, purple, rgb(209, 29, 194));
+=======
+  --primary-color: rgb(14, 14, 82);
+  --background: linear-gradient(40deg, purple, rgb(209, 29, 194));
+>>>>>>> 766b8bd7034c74f5fe0f74d1635a3a867a927e97
 }
 
 
@@ -18,9 +23,42 @@ h3 {
     font-weight: bold;
 }
 
+<<<<<<< HEAD
 h2{
     font-family: sans-serif;
     padding: 30px 5px 0 15px;
+=======
+.row {
+  padding: 30px 20px;
+}
+#card {
+  padding-bottom: 20px;
+  padding-top: 0px;
+}
+.img {
+  position: absolute;
+  right: 350px;
+}
+.float-img {
+  position: absolute;
+  bottom: 380px;
+  left: 1100px;
+  background-color: #fff;
+  border-radius: 15px;
+  z-index: 1;
+  width: 8%;
+  text-align: center;
+}
+.float-img2 {
+  position: absolute;
+  top: 120px;
+  right: 310px;
+  background-color: #fff;
+  border-radius: 15px;
+  z-index: 1;
+  width: 8%;
+  text-align: center;
+>>>>>>> 766b8bd7034c74f5fe0f74d1635a3a867a927e97
 }
 
 .row {
@@ -99,6 +137,7 @@ body {
     background-image: linear-gradient(40deg, rgb(247, 247, 247), rgb(54, 176, 224));
 }
 
+<<<<<<< HEAD
 
 p {
     font-weight: normal;
@@ -118,6 +157,16 @@ p {
     color: rgb(14, 14, 49);
     font-weight: bold;
     font-size: larger;
+=======
+p {
+  font-weight: bold;
+}
+
+.logo {
+  color: rgb(14, 14, 49);
+  font-weight: bold;
+  font-size: larger;
+>>>>>>> 766b8bd7034c74f5fe0f74d1635a3a867a927e97
 }
 
 .start {
@@ -128,6 +177,7 @@ p {
     padding: 10px;
 }
 
+<<<<<<< HEAD
 
 .btn {
     background-image: var(--background);
@@ -155,6 +205,33 @@ p {
     cursor: pointer;
     color: #fff;
     padding: 10px;
+=======
+.btn {
+  background-image: var(--background);
+  border-radius: 15px;
+  cursor: pointer;
+  color: #fff;
+  width: 35%;
+  padding: 10px 20px;
+}
+
+.btn:hover {
+  color: var(--primary-color);
+}
+
+.container-fluid,
+.page-footer {
+  padding: 3% 20%;
+}
+
+.end {
+  background-image: var(--background);
+  border-radius: 15px;
+  cursor: pointer;
+  color: #fff;
+  width: 15%;
+  padding: 10px 15px;
+>>>>>>> 766b8bd7034c74f5fe0f74d1635a3a867a927e97
 }
 
 .top,
@@ -167,9 +244,15 @@ p {
 }
 
 .footer-logo {
+<<<<<<< HEAD
     color: #fff;
     font-weight: bold;
     font-size: larger;
+=======
+  color: #fff;
+  font-weight: bold;
+  font-size: larger;
+>>>>>>> 766b8bd7034c74f5fe0f74d1635a3a867a927e97
 }
 
 /* section2 */
@@ -295,6 +378,7 @@ p {
 @media screen and (max-width:500px) {
     .sec-2 {
         grid-template-columns: 1fr;
+<<<<<<< HEAD
         grid-template-areas:
             "item1"
             "item2"
@@ -304,3 +388,14 @@ p {
             "item6"
     }
 }
+=======
+        grid-template-areas: 
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5"
+        "item6"
+    }  
+}
+>>>>>>> 766b8bd7034c74f5fe0f74d1635a3a867a927e97
