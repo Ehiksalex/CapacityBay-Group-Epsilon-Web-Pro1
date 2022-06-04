@@ -1,8 +1,9 @@
-* {
-  padding: o;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
 }
 
 :root {
@@ -10,11 +11,14 @@
   --background: linear-gradient(40deg, purple, rgb(209, 29, 194));
 }
 
-h1 {
-  font-family: sans-serif;
-  font-size: 2.5rem;
-  line-height: 1.5;
-  font-weight: 600;
+
+h2{
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    line-height: 1;
+    font-weight: 400;
+    text-align: center;
+    
 }
 
 .row {
@@ -49,27 +53,55 @@ h1 {
   text-align: center;
 }
 
-.my_image {
-  border-radius: 45%;
+.img{
+    position: absolute;
+    right:300px;
+    z-index: 2;
 }
 
-/* .side{
+
+.float-img{
+    position: absolute;
+    bottom:220px;
+    right: 520px;
+    background-color: #fff;
+    border-radius: 15px;
+    z-index: 2;
+    width: 8%;
+    text-align: center;
+    
+}
+.float-img2{
+    position: absolute;
+    top:120px;
+    right: 310px;
+    background-color: #fff;
+    border-radius: 15px;
+    z-index: 2;
+    width: 8%;
+    text-align: center;
+}
+
+.my_image{
+    border-radius: 45%;
+   
+   
+}
+
+.side{
     background-image:var(--background);
     position: absolute;
-    top: 100px;
+    top: 215px;
     right: 100px;
-    z-index: -1;
-    width: 18%;
-    height: 15%;
-} */
+    width: 250px;
+    height: 100px;
+    transform:matrix(1.5,-0.7,0,2,0,0);
+   
+}
 
-#sec-1 {
-  /* height: 100vh; */
-  background-image: linear-gradient(
-    40deg,
-    rgb(247, 247, 247),
-    rgb(54, 176, 224)
-  );
+body{
+    /* height: 100vh; */
+    background-image: linear-gradient(40deg,rgb(247, 247, 247), rgb(54, 176, 224));
 }
 
 p {
@@ -82,13 +114,13 @@ p {
   font-size: larger;
 }
 
-.start {
-  background-color: var(--primary-color);
-  border-radius: 15px;
-  cursor: pointer;
-  color: #fff;
-  width: 15%;
-  padding: 10px 20px;
+.start{
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    cursor: pointer;
+    color: #fff;
+    width: 15%;
+    padding:10px 15px;
 }
 
 .btn {
@@ -119,15 +151,136 @@ p {
 }
 
 .top,
-.buttom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
+.buttom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 3% 3%;
 }
 
 .footer-logo {
   color: #fff;
   font-weight: bold;
   font-size: larger;
+}
+
+/* section2 */
+
+.sec-2{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 3% 20%;
+    margin: 10px;
+    grid-template-areas: 
+    "item1 item2 item3"
+    "item4 item5 item6";
+}
+
+.sec-2 h3{
+    color:#ffffff;
+    text-align: center;
+}
+
+.sec-2 .sec21{
+    background: linear-gradient(40deg,purple, rgb(209, 29, 194));
+    border-radius: 10px;
+    min-height: 200px;
+    margin: 10px;
+    color: #fff;
+    box-shadow: 2px 2px #888888;
+}
+
+
+.sec-2 .sec22{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    min-height: 200px;
+    margin: 10px;
+    box-shadow: 2px 2px #888888;
+}
+
+.sec-2 .sec22 a{
+    text-decoration: none;
+    color: rgb(209, 29, 194);
+    margin: 10px;
+   
+}
+
+.fa{
+    background:linear-gradient(40deg,purple, rgb(209, 29, 194));
+    border-radius: 50%;
+    color:#fff;
+    padding: 10px;
+
+}
+
+.grid-item1{
+    grid-area: item1;
+}
+
+.grid-item2{
+    grid-area: item2;
+}
+
+.grid-item3{
+    grid-area: item3;
+}
+
+.grid-item4{
+    grid-area: item4;
+}
+
+.grid-item5{
+    grid-area: item5;
+}
+
+.grid-item6{
+    grid-area: item6;
+}
+
+/* .con{
+    background: black;
+    width: 100%;
+    position: relative;
+} */
+
+/* responsive */
+/* tablet view */
+@media screen and (max-width:827px){
+    .sec-2{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "item1 item2"
+        "item3 item4"
+        "item5 item6";
+        margin: 5px;
+    }
+    .my_image{
+        border-radius: 90%;
+    }
+    .img{
+        position: relative;
+        right:70px;
+       margin-top: 15px;
+    }
+    .side{
+        display: none;
+    }
+    
+}
+
+/* mobile view */
+@media screen and (max-width:414px){
+    .sec-2{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5"
+        "item6"
+    }  
 }
