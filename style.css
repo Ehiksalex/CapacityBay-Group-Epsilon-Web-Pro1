@@ -1,249 +1,240 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 :root {
-    --primary-color: rgb(14, 14, 82);
-    --background: linear-gradient(40deg, purple, rgb(209, 29, 194));
+  --primary-color: rgb(14, 14, 82);
+  --background: linear-gradient(20deg, purple, rgb(209, 29, 194));
 }
-
 
 h3 {
-    font-family: sans-serif;
-    font-size: 2.5rem;
-    line-height: 1;
-    font-weight: bold;
+  font-family: sans-serif;
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: bold;
 }
 
-h2{
-    font-family: sans-serif;
-    padding: 30px 5px 0 15px;
+h2 {
+  font-family: sans-serif;
+  padding: 30px 5px 0 15px;
 }
 
 .row {
-    padding: 30px 20px;
+  padding: 30px 20px;
 }
 
 .float-img {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .float-img2 {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .sec1 {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 10px;
-    grid-template-areas:
-        "item01 item02";
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 10px;
+  grid-template-areas: "item01 item02";
 }
 
 .part1 {
-    grid-area: "item01";
+  grid-area: "item01";
 }
 
 .part2 {
-    grid-area: "item02";
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
+  grid-area: "item02";
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
 }
 
 .my_image {
-    border-radius: 45%;
-    
+  border-radius: 45%;
 }
 
 .card1 {
-    background-color: #ffffff;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
-    max-height: 120px;
-    position: absolute;
-    top: 30px;
-    right: 10%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  max-height: 120px;
+  position: absolute;
+  top: 30px;
+  right: 10%;
 }
 
 .card2 {
-    background-color: #ffffff;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
-    max-height: 120px;
-    position: absolute;
-    top: 170px;
-    right: 235px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  max-height: 120px;
+  position: absolute;
+  top: 170px;
+  right: 235px;
 }
 
-.side{
-    background-image:var(--background);
-    position: absolute;
-    top: 60px;
-    width: 250px;
-    height: 100px;
-    transform:matrix(1.5,-0.5,0,1.5,0,0);
-    z-index:-3;
-    left:50%;
+.side {
+  background-image: var(--background);
+  position: absolute;
+  top: 60px;
+  width: 250px;
+  height: 100px;
+  transform: matrix(1.5, -0.5, 0, 1.5, 0, 0);
+  z-index: -3;
+  left: 50%;
 }
 
 body {
-    background-image: linear-gradient(40deg, rgb(247, 247, 247), rgb(54, 176, 224));
-   
+    background-image: linear-gradient(40deg, rgb(247, 247, 247), rgb(54, 176, 224);
 }
 
-
 p {
-    font-weight: normal;
-    padding: 10px 0;
+  font-weight: normal;
+  padding: 10px 0;
 }
 
 .heading {
-    font-weight: normal;
-    padding: 0;
+  font-weight: normal;
+  padding: 0;
 }
 
-.number{
-    padding: 10px;
+.number {
+  padding: 10px;
 }
 
 .logo {
-    color: rgb(14, 14, 49);
-    font-weight: bold;
-    font-size: larger;
+  color: rgb(14, 14, 49);
+  font-weight: bold;
+  font-size: larger;
 }
 
 .start {
-    background-color: var(--primary-color);
-    border-radius: 20px;
-    cursor: pointer;
-    color: #fff;
-    padding: 10px;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px;
 }
 
-
 .btn {
-    background-image: var(--background);
-    border-radius: 20px;
-    cursor: pointer;
-    color: #fff;
-    padding: 10px;
+  background-image: var(--background);
+  border-radius: 20px;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px;
 }
 
 .btn:hover {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .container-fluid {
-    padding: 10px 20%;
+  padding: 10px 20%;
 }
 
 .page-footer {
-    padding: 10px 20%;
+  padding: 10px 20%;
 }
 
 .end {
-    background-image: var(--background);
-    border-radius: 20px;
-    cursor: pointer;
-    color: #fff;
-    padding: 10px;
+  background-image: var(--background);
+  border-radius: 20px;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px;
 }
 
 .top,
 .buttom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding: 10px 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 10px 3%;
 }
 
 .footer-logo {
-    color: #fff;
-    font-weight: bold;
-    font-size: larger;
+  color: #fff;
+  font-weight: bold;
+  font-size: larger;
 }
 
 /* section2 */
 
 .sec-2 {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 3% 20%;
-    margin: 10px;
-    grid-template-areas:
-        "item1 item2 item3"
-        "item4 item5 item6";
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 3% 20%;
+  margin: 10px;
+  grid-template-areas:
+    "item1 item2 item3"
+    "item4 item5 item6";
 }
-
 
 .sec-2 .sec21 {
-    background: linear-gradient(40deg, purple, rgb(209, 29, 194));
-    border-radius: 10px;
-    min-height: 200px;
-    margin: 10px;
-    color: #fff;
-    box-shadow: 2px 2px #888888;
+  background: linear-gradient(20deg, rgb(240, 45, 163), rgb(249, 79, 116));
+  border-radius: 10px;
+  min-height: 200px;
+  margin: 10px;
+  color: #fff;
+  box-shadow: 2px 2px #888888;
 }
 
-
 .sec-2 .sec22 {
-    background-color: antiquewhite;
-    border-radius: 10px;
-    min-height: 200px;
-    margin: 10px;
-    box-shadow: 2px 2px #888888;
+  background-color: white;
+  border-radius: 10px;
+  min-height: 200px;
+  margin: 10px;
+  box-shadow: 2px 2px #888888;
 }
 
 .sec-2 .sec22 a {
-    text-decoration: none;
-    color: rgb(209, 29, 194);
-    margin: 0px;
+  text-decoration: none;
+  color: rgb(209, 29, 194);
+  margin: 0px;
 }
 
 .fa {
-    background: linear-gradient(40deg, purple, rgb(209, 29, 194));
-    border-radius: 100%;
-    color: #fff;
-    padding: 10px;
-
+  background: linear-gradient(20deg, rgb(240, 45, 163), rgb(249, 79, 116));
+  border-radius: 100%;
+  color: #fff;
+  padding: 10px;
 }
 
 .icon {
-    margin: 0 0 20px 3px;
+  margin: 0 0 20px 3px;
 }
 
 .grid-item1 {
-    grid-area: item1;
+  grid-area: item1;
 }
 
 .grid-item2 {
-    grid-area: item2;
+  grid-area: item2;
 }
 
 .grid-item3 {
-    grid-area: item3;
+  grid-area: item3;
 }
 
 .grid-item4 {
-    grid-area: item4;
+  grid-area: item4;
 }
 
 .grid-item5 {
-    grid-area: item5;
+  grid-area: item5;
 }
 
 .grid-item6 {
-    grid-area: item6;
+  grid-area: item6;
 }
 
 /* responsive */
@@ -290,19 +281,18 @@ p {
         right: 0px;
     }
     
-
 }
 
 /* mobile view */
-@media screen and (max-width:500px) {
-    .sec-2 {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "item1"
-            "item2"
-            "item3"
-            "item4"
-            "item5"
-            "item6"
-    }
+@media screen and (max-width: 500px) {
+  .sec-2 {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3"
+      "item4"
+      "item5"
+      "item6";
+  }
 }
