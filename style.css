@@ -6,9 +6,9 @@
     font-family:sans-serif;
 }
 
-:root{
-    --primary-color:rgb(14, 14, 82);
-    --background:linear-gradient(40deg,purple, rgb(209, 29, 194));
+:root {
+  --primary-color: rgb(14, 14, 82);
+  --background: linear-gradient(40deg, purple, rgb(209, 29, 194));
 }
 
 
@@ -21,8 +21,36 @@ h2{
     
 }
 
-.row{
-    padding:30px 20px;
+.row {
+  padding: 30px 20px;
+}
+#card {
+  padding-bottom: 20px;
+  padding-top: 0px;
+}
+.img {
+  position: absolute;
+  right: 350px;
+}
+.float-img {
+  position: absolute;
+  bottom: 380px;
+  left: 1100px;
+  background-color: #fff;
+  border-radius: 15px;
+  z-index: 1;
+  width: 8%;
+  text-align: center;
+}
+.float-img2 {
+  position: absolute;
+  top: 120px;
+  right: 310px;
+  background-color: #fff;
+  border-radius: 15px;
+  z-index: 1;
+  width: 8%;
+  text-align: center;
 }
 
 .img{
@@ -76,15 +104,14 @@ body{
     background-image: linear-gradient(40deg,rgb(247, 247, 247), rgb(54, 176, 224));
 }
 
-
-p{
-    font-weight: bold;
+p {
+  font-weight: bold;
 }
 
-.logo{
-    color: rgb(14, 14, 49);
-    font-weight: bold;
-    font-size: larger;
+.logo {
+  color: rgb(14, 14, 49);
+  font-weight: bold;
+  font-size: larger;
 }
 
 .start{
@@ -96,32 +123,31 @@ p{
     padding:10px 15px;
 }
 
-
-.btn{
-    background-image: var(--background);
-    border-radius: 15px;
-    cursor: pointer;
-    color: #fff;
-    width: 35%;
-    padding:10px 20px;
+.btn {
+  background-image: var(--background);
+  border-radius: 15px;
+  cursor: pointer;
+  color: #fff;
+  width: 35%;
+  padding: 10px 20px;
 }
 
-.btn:hover{
-    color: var(--primary-color);
+.btn:hover {
+  color: var(--primary-color);
 }
 
 .container-fluid,
-.page-footer{
-    padding: 3% 20%;
+.page-footer {
+  padding: 3% 20%;
 }
 
-.end{
-    background-image: var(--background);
-    border-radius: 15px;
-    cursor: pointer;
-    color: #fff;
-    width: 15%;
-    padding:10px 15px;
+.end {
+  background-image: var(--background);
+  border-radius: 15px;
+  cursor: pointer;
+  color: #fff;
+  width: 15%;
+  padding: 10px 15px;
 }
 
 .top,
@@ -133,10 +159,10 @@ p{
     padding: 3% 3%;
 }
 
-.footer-logo{
-    color: #fff;
-    font-weight: bold;
-    font-size: larger;
+.footer-logo {
+  color: #fff;
+  font-weight: bold;
+  font-size: larger;
 }
 
 /* section2 */
