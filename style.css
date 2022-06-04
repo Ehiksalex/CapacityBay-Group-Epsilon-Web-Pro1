@@ -1,139 +1,172 @@
-
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
 
-:root{
-    --primary-color:rgb(14, 14, 82);
-    --background:linear-gradient(40deg,purple, rgb(209, 29, 194));
+:root {
+    --primary-color: rgb(14, 14, 82);
+    --background: linear-gradient(40deg, purple, rgb(209, 29, 194));
 }
 
 
-h2{
+h3 {
     font-family: sans-serif;
     font-size: 2.5rem;
     line-height: 1;
-    font-weight: 400;
-    text-align: center;
-    
+    font-weight: bold;
 }
 
-.row{
-    padding:30px 20px;
+h2{
+    font-family: sans-serif;
+    padding: 30px 5px 0 15px;
 }
 
-.img{
-    position: absolute;
-    right:300px;
-    z-index: 2;
+.row {
+    padding: 30px 20px;
 }
 
-
-.float-img{
-    position: absolute;
-    bottom:220px;
-    right: 520px;
-    background-color: #fff;
-    border-radius: 15px;
-    z-index: 2;
-    width: 8%;
-    text-align: center;
-    
-}
-.float-img2{
-    position: absolute;
-    top:120px;
-    right: 310px;
-    background-color: #fff;
-    border-radius: 15px;
-    z-index: 2;
-    width: 8%;
-    text-align: center;
+.float-img {
+    display: flex;
+    flex-direction: column;
 }
 
-.my_image{
+.float-img2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.sec1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+    grid-template-areas:
+        "item01 item02";
+}
+
+.part1 {
+    grid-area: "item01";
+}
+
+.part2 {
+    grid-area: "item02";
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.my_image {
     border-radius: 45%;
-   
-   
+    
+}
+
+.card1 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    max-height: 100px;
+    position: absolute;
+    top: 30px;
+    right: 10%;
+}
+
+.card2 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    max-height: 100px;
+    position: absolute;
+    top: 170px;
+    right: 235px;
 }
 
 .side{
     background-image:var(--background);
     position: absolute;
-    top: 215px;
-    right: 100px;
+    top: 60px;
     width: 250px;
     height: 100px;
-    transform:matrix(1.5,-0.7,0,2,0,0);
-   
+    transform:matrix(1.5,-0.4,0,1.5,0,0);
+    z-index:-3;
+    left:50%;
 }
 
-body{
-    /* height: 100vh; */
-    background-image: linear-gradient(40deg,rgb(247, 247, 247), rgb(54, 176, 224));
+body {
+    background-image: linear-gradient(40deg, rgb(247, 247, 247), rgb(54, 176, 224));
 }
 
 
-p{
-    font-weight: bold;
+p {
+    font-weight: normal;
+    padding: 10px 0;
 }
 
-.logo{
+.heading {
+    font-weight: normal;
+    padding: 0;
+}
+
+.number{
+    padding: 10px;
+}
+
+.logo {
     color: rgb(14, 14, 49);
     font-weight: bold;
     font-size: larger;
 }
 
-.start{
+.start {
     background-color: var(--primary-color);
-    border-radius: 15px;
+    border-radius: 20px;
     cursor: pointer;
     color: #fff;
-    width: 15%;
-    padding:10px 15px;
+    padding: 10px;
 }
 
 
-.btn{
+.btn {
     background-image: var(--background);
-    border-radius: 15px;
+    border-radius: 20px;
     cursor: pointer;
     color: #fff;
-    width: 35%;
-    padding:10px 20px;
+    padding: 10px;
 }
 
-.btn:hover{
+.btn:hover {
     color: var(--primary-color);
 }
 
-.container-fluid,
-.page-footer{
-    padding: 3% 20%;
+.container-fluid {
+    padding: 10px 20%;
 }
 
-.end{
+.page-footer {
+    padding: 10px 20%;
+}
+
+.end {
     background-image: var(--background);
-    border-radius: 15px;
+    border-radius: 20px;
     cursor: pointer;
     color: #fff;
-    width: 15%;
-    padding:10px 15px;
+    padding: 10px;
 }
 
 .top,
-.buttom{
+.buttom {
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 3% 3%;
+    padding: 10px 3%;
 }
 
-.footer-logo{
+.footer-logo {
     color: #fff;
     font-weight: bold;
     font-size: larger;
@@ -141,24 +174,19 @@ p{
 
 /* section2 */
 
-.sec-2{
-    position: relative;
+.sec-2 {
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 3% 20%;
     margin: 10px;
-    grid-template-areas: 
-    "item1 item2 item3"
-    "item4 item5 item6";
+    grid-template-areas:
+        "item1 item2 item3"
+        "item4 item5 item6";
 }
 
-.sec-2 h3{
-    color:#ffffff;
-    text-align: center;
-}
 
-.sec-2 .sec21{
-    background: linear-gradient(40deg,purple, rgb(209, 29, 194));
+.sec-2 .sec21 {
+    background: linear-gradient(40deg, purple, rgb(209, 29, 194));
     border-radius: 10px;
     min-height: 200px;
     margin: 10px;
@@ -167,7 +195,7 @@ p{
 }
 
 
-.sec-2 .sec22{
+.sec-2 .sec22 {
     background-color: antiquewhite;
     border-radius: 10px;
     min-height: 200px;
@@ -175,86 +203,104 @@ p{
     box-shadow: 2px 2px #888888;
 }
 
-.sec-2 .sec22 a{
+.sec-2 .sec22 a {
     text-decoration: none;
     color: rgb(209, 29, 194);
-    margin: 10px;
-   
+    margin: 0px;
 }
 
-.fa{
-    background:linear-gradient(40deg,purple, rgb(209, 29, 194));
-    border-radius: 50%;
-    color:#fff;
+.fa {
+    background: linear-gradient(40deg, purple, rgb(209, 29, 194));
+    border-radius: 100%;
+    color: #fff;
     padding: 10px;
 
 }
 
-.grid-item1{
+.icon {
+    margin: 0 0 20px 3px;
+}
+
+.grid-item1 {
     grid-area: item1;
 }
 
-.grid-item2{
+.grid-item2 {
     grid-area: item2;
 }
 
-.grid-item3{
+.grid-item3 {
     grid-area: item3;
 }
 
-.grid-item4{
+.grid-item4 {
     grid-area: item4;
 }
 
-.grid-item5{
+.grid-item5 {
     grid-area: item5;
 }
 
-.grid-item6{
+.grid-item6 {
     grid-area: item6;
 }
 
-/* .con{
-    background: black;
-    width: 100%;
-    position: relative;
-} */
-
 /* responsive */
 /* tablet view */
-@media screen and (max-width:827px){
-    .sec-2{
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "item1 item2"
-        "item3 item4"
-        "item5 item6";
+@media screen and (max-width:827px) {
+    .sec1 {
+        grid-template-columns: auto;
+        grid-template-areas:
+            "item01"
+            "item02";
+    }
+
+    .sec-2 {
+        grid-template-columns: auto auto;
+        grid-template-areas:
+            "item1 item2"
+            "item3 item4"
+            "item5 item6";
         margin: 5px;
     }
-    .my_image{
-        border-radius: 90%;
+
+    .my_image {
+        border-radius: 100%;
     }
-    .img{
-        position: relative;
-        right:70px;
-       margin-top: 15px;
+
+    .img {
+        right: 70px;
+        margin-top: 15px;
     }
-    .side{
+
+    .side {
         display: none;
     }
-    
+
+    .card1 {
+        position: absolute;
+        top: 150px;
+        right: 150px;
+    }
+
+    .card2 {
+        position: absolute;
+        top: 30px;
+        right: 0px;
+    }
+
 }
 
 /* mobile view */
-@media screen and (max-width:414px){
-    .sec-2{
+@media screen and (max-width:500px) {
+    .sec-2 {
         grid-template-columns: 1fr;
-        grid-template-areas: 
-        "item1"
-        "item2"
-        "item3"
-        "item4"
-        "item5"
-        "item6"
-    }  
+        grid-template-areas:
+            "item1"
+            "item2"
+            "item3"
+            "item4"
+            "item5"
+            "item6"
+    }
 }
