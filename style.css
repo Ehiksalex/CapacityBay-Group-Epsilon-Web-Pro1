@@ -67,7 +67,7 @@ h2{
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
-    max-height: 100px;
+    max-height: 120px;
     position: absolute;
     top: 30px;
     right: 10%;
@@ -78,7 +78,7 @@ h2{
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
-    max-height: 100px;
+    max-height: 120px;
     position: absolute;
     top: 170px;
     right: 235px;
@@ -285,7 +285,7 @@ p {
 
     .card2 {
         position: absolute;
-        top: 30px;
+        top: 0.5px;
         right: 0px;
     }
 
