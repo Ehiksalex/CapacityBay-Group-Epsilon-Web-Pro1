@@ -67,8 +67,8 @@ h2 {
   padding: 10px;
   max-height: 120px;
   position: absolute;
-  top: 30px;
-  right: 10%;
+  top: 5px;
+  right: 5%;
 }
 
 .card2 {
@@ -79,7 +79,7 @@ h2 {
   max-height: 120px;
   position: absolute;
   top: 170px;
-  right: 235px;
+  right: 230px;
 }
 
 .side {
@@ -294,8 +294,8 @@ p {
 
     .card1 {
         position: absolute;
-        top: 10%;
-        right: 0.5%;
+        top: -40px;
+        right: -10%;
     }
 
     .card2 {
