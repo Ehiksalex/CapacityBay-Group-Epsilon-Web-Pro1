@@ -7,7 +7,7 @@
 
 :root {
     --primary-color: rgb(14, 14, 82);
-    --background: linear-gradient(40deg, purple, rgb(209, 29, 194));
+    --background: linear-gradient(20deg, purple, rgb(186, 55, 195));
 }
 
 
@@ -131,7 +131,7 @@ p {
 
 
 .btn {
-    background-image: var(--background);
+    background-image:  linear-gradient(20deg, rgb(240,45,163), rgb(249, 79, 116));;
     border-radius: 20px;
     cursor: pointer;
     color: #fff;
@@ -177,6 +177,7 @@ p {
 
 .sec-2 {
     display: grid;
+    width:100%;
     grid-template-columns: auto auto auto;
     padding: 3% 20%;
     margin: 10px;
@@ -187,7 +188,7 @@ p {
 
 
 .sec-2 .sec21 {
-    background: linear-gradient(40deg, purple, rgb(209, 29, 194));
+    background: linear-gradient(20deg, rgb(240,45,163), rgb(249, 79, 116));
     border-radius: 10px;
     min-height: 200px;
     margin: 10px;
@@ -197,7 +198,7 @@ p {
 
 
 .sec-2 .sec22 {
-    background-color: antiquewhite;
+    background-color: white;
     border-radius: 10px;
     min-height: 200px;
     margin: 10px;
@@ -211,10 +212,12 @@ p {
 }
 
 .fa {
-    background: linear-gradient(40deg, purple, rgb(209, 29, 194));
+    background: linear-gradient(20deg, rgb(240,45,163), rgb(249, 79, 116));
     border-radius: 100%;
     color: #fff;
     padding: 10px;
+    position: relative;
+    top:-15px;
 
 }
 
