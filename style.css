@@ -92,6 +92,12 @@ h2 {
   left: 50%;
 }
 
+h4{
+    margin-bottom: 15px;
+    color:rgb(3,9,74);
+}
+
+
 body {
     background-image: linear-gradient(40deg, rgb(247, 247, 247), rgb(54, 176, 224));
 }
@@ -104,10 +110,13 @@ p {
 .heading {
   font-weight: normal;
   padding: 0;
+  margin-bottom: 8px;
+  color:rgb(74, 68, 245);
 }
 
 .number {
   padding: 10px;
+  color:rgb(3,9,74);
 }
 
 .logo {
@@ -199,7 +208,7 @@ p {
 .sec-2 .sec22 a {
   text-decoration: none;
   color: rgb(209, 29, 194);
-  margin: 0px;
+  font-weight: 700;
 }
 
 .fa {
@@ -274,14 +283,14 @@ p {
 
     .card1 {
         position: absolute;
-        top: 150px;
-        right: 150px;
+        top: 10%;
+        right: 0.5%;
     }
 
     .card2 {
         position: absolute;
-        top: 0.5px;
-        right: 0px;
+        top: 150px;
+        right:150px;
     }
     
 }
