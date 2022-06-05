@@ -22,8 +22,6 @@ The documentation is divided into several sections:
 * [Introduction] (https://www.w3schools.com/html/html_editors.asp)
 * [Editors] (https://www.w3schools.com/html/html_editors.asp)
 
-You can improve it by sending pull requests to (https://github.com/placidaxid/CapacityBay-Group-Epsilon-Web-Pro1)
-
-## Contributing
+You can improve it by sending pull requests to [Ehiksalex](https://github.com/Ehiksalex/CapacityBay-Group-Epsilon-Web-Pro1)
 
 The main purpose of this repository is to continue producing new web design layouts, making it faster and easier to use.
