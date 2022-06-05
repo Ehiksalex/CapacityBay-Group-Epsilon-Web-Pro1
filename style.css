@@ -38,6 +38,7 @@ h2 {
 
 .sec1 {
   display: grid;
+  /* flex-grow: 1; */
   grid-template-columns: 50% 50%;
   padding: 10px;
   grid-template-areas: "item01 item02";
@@ -100,6 +101,11 @@ h4{
 
 body {
     background-image: linear-gradient(40deg, rgb(247, 247, 247), rgb(54, 176, 224));
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 p {
@@ -180,6 +186,7 @@ p {
 
 .sec-2 {
   display: grid;
+  flex-grow: 1;
   grid-template-columns: auto auto auto;
   padding: 3% 20%;
   margin: 10px;
@@ -191,8 +198,9 @@ p {
 .sec-2 .sec21 {
     background: linear-gradient(20deg, rgb(240,45,163), rgb(249, 79, 116));
     border-radius: 10px;
-    min-height: 200px;
+    /* min-height: 200px; */
     margin: 10px;
+    padding: 20px 10px;
     color: #fff;
     box-shadow: 2px 2px #888888;
 }
@@ -200,15 +208,17 @@ p {
 .sec-2 .sec22 {
     background-color: white;
     border-radius: 10px;
-    min-height: 200px;
+    /* min-height: 200px; */
     margin: 10px;
+    padding: 0px 10px;
     box-shadow: 2px 2px #888888;
 }
 
 .sec-2 .sec22 a {
   text-decoration: none;
   color: rgb(209, 29, 194);
-  font-weight: 700;
+  margin: 0px;
+  padding: 0px;
 }
 
 .fa {
@@ -222,7 +232,7 @@ p {
 }
 
 .icon {
-  margin: 0 0 20px 3px;
+  margin: 0 0 20px 0;
 }
 
 .grid-item1 {
@@ -251,7 +261,7 @@ p {
 
 /* responsive */
 /* tablet view */
-@media screen and (max-width:827px) {
+@media screen and (max-width:900px) {
     .sec1 {
         grid-template-columns: auto;
         grid-template-areas:
@@ -296,7 +306,7 @@ p {
 }
 
 /* mobile view */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 528px) {
   .sec-2 {
     grid-template-columns: 1fr;
     grid-template-areas:
